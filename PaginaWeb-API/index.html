@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia de Alumnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <!-- Menú desplegable -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-header">Menú</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Gestión de clases</a></li>
+                            <li><a href="#">Horario</a></li>
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <header>
+                <div class="welcome-message">
+                    Bienvenido/a <span>"Nombre profesor/a"</span>
+                </div>
+                <div class="header-icons">
+                    <i class="icon">🔔</i>
+                    <i class="icon">💬</i>
+                    <i class="icon">👤</i>
+                </div>
+            </header>
+
+            <section class="content">
+                <h2>Tabla de asistencia de los alumnos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Asistencia</th>
+                            <th>Retraso</th>
+                            <th>Marcaje</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendance-body">
+                        <!-- Aquí se llenarán los datos dinámicamente -->
+                    </tbody>
+                </table>
+                <button class="modify-button">Modificar</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

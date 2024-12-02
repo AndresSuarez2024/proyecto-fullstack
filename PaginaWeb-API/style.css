@@ -1,0 +1,108 @@
+/* Estil global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #a3e3f3;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .welcome-message span {
+    font-weight: bold;
+}
+
+.header-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* Tabla de asistencia */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f9f9f9;
+}
+
+table td {
+    text-align: center;
+}
+
+/* Botón de modificar */
+.modify-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modify-button:hover {
+    background-color: #555;
+}
